@@ -16,7 +16,7 @@ The exact iOS action availability varies by version. See [`shortcuts/SETUP.md`](
 
 ## Taxonomy
 
-The controlled vocabulary lives in [`config/tags.json`](config/tags.json). Each item gets one primary domain tag and zero or more optional detail/facet tags. Do not invent synonyms or new tags during summarization. Use `#review` when the category is genuinely unclear.
+The controlled vocabulary lives in [`config/tags.json`](config/tags.json). Each item gets one primary domain tag, at most one related domain tag, and optional facet tags. Do not invent synonyms or new tags during summarization. Use `#review` when the category is genuinely unclear.
 
 ## Organizer prompt
 
@@ -25,3 +25,4 @@ Use [`prompts/organize-zh.md`](prompts/organize-zh.md) as the prompt for the Sho
 ## Example
 
 [`examples/2026-09-29.md`](examples/2026-09-29.md) shows the intended note format using invented content.
+

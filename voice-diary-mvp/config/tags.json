@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "primary_domains": {
+    "#health": ["#health/nutrition", "#health/nutrition/calories", "#health/exercise", "#health/sleep", "#health/medical"],
+    "#work": ["#work/project", "#work/meeting", "#work/career"],
+    "#learning": ["#learning/reading", "#learning/skill"],
+    "#social": ["#social/friends", "#social/community", "#social/colleagues"],
+    "#family": ["#family/parenting", "#family/partner", "#family/home"],
+    "#daily": ["#daily/home", "#daily/errands", "#daily/travel", "#daily/food-out"],
+    "#inner": ["#inner/emotion", "#inner/reflection", "#inner/spirituality"]
+  },
+  "facets": ["#idea", "#todo", "#milestone", "#review"],
+  "aliases": {
+    "calories": "#health/nutrition/calories",
+    "calorie": "#health/nutrition/calories",
+    "饮食": "#health/nutrition",
+    "吃饭": "#health/nutrition",
+    "卡路里": "#health/nutrition/calories",
+    "运动": "#health/exercise",
+    "睡眠": "#health/sleep",
+    "看病": "#health/medical",
+    "育儿": "#family/parenting",
+    "孩子": "#family/parenting",
+    "伴侣": "#family/partner",
+    "朋友": "#social/friends",
+    "同事": "#social/colleagues",
+    "情绪": "#inner/emotion",
+    "心情": "#inner/emotion",
+    "反思": "#inner/reflection",
+    "灵性": "#inner/spirituality",
+    "家务": "#daily/home",
+    "跑腿": "#daily/errands",
+    "旅行": "#daily/travel"
+  }
+}

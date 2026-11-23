@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f8f4"><title>Toddler Shelf</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f8f4;color:#192c23;font:16px/1.55 system-ui,sans-serif}main{max-width:680px;margin:auto;padding:24px 20px 56px}header{display:flex;justify-content:space-between;align-items:center;gap:12px}header strong{font-size:20px}h1{font-size:clamp(30px,7vw,46px);line-height:1.12;margin:34px 0 12px;letter-spacing:-.05em}p{margin:8px 0 16px}.muted{color:#475c51}button,.button{font:inherit;font-weight:650;min-height:44px;border:1px solid #c7d6cc;padding:10px 16px;border-radius:14px;background:#fff;color:#192c23;cursor:pointer}button[disabled]{opacity:.5;cursor:default}.primary{background:#164d37;color:#fff;border-color:#164d37}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 16px}.panel{border:1px solid #d9e3dc;background:#fff;padding:18px;border-radius:20px;margin-top:18px}summary{cursor:pointer;font-weight:700}label.field{display:block;margin-top:12px}input[type=date],input[type=text]{width:100%;border:1px solid #bdcec2;border-radius:10px;font:inherit;padding:9px;color:inherit;background:white}#frame{position:relative;overflow:hidden;border-radius:18px;background:#e8eee9}#photo{width:100%;display:block}.marker{position:absolute;border:3px solid #f5bb41;border-radius:10px;color:#241a08;box-shadow:0 0 0 1px #183029;pointer-events:none}.marker.pick{border-color:#58f4a5}.marker span{position:absolute;top:0;left:0;background:#f5bb41;padding:0 5px;border-radius:4px;font-weight:800}.marker.pick span{background:#58f4a5}.card{margin:9px 0;padding:12px;border-radius:12px;background:#f0f5f1}.card p{margin:4px 0}a{color:#13583b}#status{min-height:1.6em}[hidden]{display:none!important}
+</style></head>
+<body><main>
+<header><strong>Toddler Shelf</strong><button id="profile-button" aria-controls="profile" aria-expanded="false">宝宝档案</button></header>
+<section class="panel" id="profile" hidden>
+<form id="profile-form"><label class="field">出生日期<input id="birth" type="date"></label>
+<label class="field">已知食物过敏<input id="allergies" type="text" placeholder="例如鸡蛋、牛奶，用逗号分隔" maxlength="160"></label>
+<p class="muted">档案保存在此浏览器。照片识别服务只接收照片。</p><button class="primary" type="submit">保存档案</button></form></section>
+<h1>这一排，宝宝选哪款？</h1>
+<p class="muted">拍清一层酸奶货架。我们会核对已入库的标签，在照片上圈出选项。</p>
+<p id="profile-summary" class="muted"></p>
+<div class="actions">
+<button id="camera-button" class="primary">拍货架</button><button id="demo-button">试用样例</button>
+<input id="camera" type="file" accept="image/*" capture="environment" hidden>
+</div>
+<p id="status" role="status"></p>
+<div id="frame" hidden><img id="photo" alt="酸奶货架照片"><div id="markers"></div></div>
+<section id="results" class="panel" aria-label="圈选结果" hidden></section>
+</main><script type="module">
+const $ = id => document.getElementById(id);
+const profileKey = "toddler-shelf-profile-v1";
+let profile = {};
+try { profile = JSON.parse(localStorage.getItem(profileKey) || "{}"); } catch {}
+let busy = false;
+function months(birth) {
+  if (!birth) return null;
+  const [y,m,d] = birth.split("-").map(Number), now = new Date();
+  return (now.getFullYear()-y)*12+now.getMonth()+1-m-(now.getDate()<d?1:0);
+}
+function syncProfile() {
+  $("birth").value = profile.birth || "";
+  $("allergies").value = profile.allergies || "";
+  const age = months(profile.birth);
+  $("profile-summary").textContent = (age === null ? "未设置月龄" : age+" 个月")
+    + (profile.allergies ? " · 已设置食物过敏" : "");
+}
+function openProfile(open) {
+  $("profile").hidden = !open;
+  $("profile-button").setAttribute("aria-expanded", String(open));
+  if (open) $("birth").focus();
+}
+$("birth").max = new Date().toLocaleDateString("en-CA");
+$("profile-button").onclick = () => openProfile($("profile").hidden);
+$("profile-form").onsubmit = event => {
+  event.preventDefault();
+  if (months($("birth").value) < 0) return;
+  profile = {birth:$("birth").value, allergies:$("allergies").value.trim()};
+  try { localStorage.setItem(profileKey, JSON.stringify(profile)); } catch {}
+  syncProfile(); openProfile(false);
+  $("status").textContent = "档案已更新。重新拍照或运行样例以应用。";
+  $("results").hidden = true; $("markers").replaceChildren();
+};
+syncProfile();
+function setBusy(value) {
+  busy = value;
+  for (const id of ["camera-button","demo-button","profile-button"]) $(id).disabled = value;
+}
+function render(result) {
+  const results = $("results"), markers = $("markers");
+  const headings = {pick:"优先选",verify:"先核对",skip:"这次跳过",neutral:"其他选项"};
+  results.replaceChildren(); markers.replaceChildren();
+  const h = document.createElement("strong");
+  h.textContent = result.items.some(x=>x.status==="pick") ? "已确认的日常选项" : "这张图暂时没有确认的首选";
+  results.append(h);
+  result.items.forEach((item,index)=>{
+    const number = index+1, card = document.createElement("div");
+    card.className = "card";
+    const title = document.createElement("strong");
+    title.textContent = number+". "+headings[item.status]+" · "+item.name;
+    const reason = document.createElement("p"); reason.textContent = item.reason;
+    card.append(title,reason);
+    if (item.source) {
+      const link=document.createElement("a"); link.href=item.source; link.textContent="查看标签来源";
+      link.target="_blank"; link.rel="noopener noreferrer"; card.append(link);
+    }
+    results.append(card);
+    if (!item.box || !["pick","verify"].includes(item.status)) return;
+    const [l,t,r,b]=item.box, marker=document.createElement("div");
+    marker.className="marker"+(item.status==="pick"?" pick":"");
+    Object.assign(marker.style,{left:l*100+"%",top:t*100+"%",width:(r-l)*100+"%",height:(b-t)*100+"%"});
+    const badge=document.createElement("span");badge.textContent=number;
+    marker.append(badge);markers.append(marker);
+  });
+  results.hidden=false;
+  $("status").textContent = result.demo ? "样例模式 · 已核对标签演示" :
+    result.items.length ? "只比较照片中能核对的商品。" : "靠近一点，拍清商品正面。";
+}
+async function analyze(isDemo,image=null) {
+  if (busy) return;
+  setBusy(true); $("results").hidden=true; $("markers").replaceChildren();
+  $("status").textContent = isDemo ? "正在加载样例…" : "正在识别货架…";
+  try {
+    if (isDemo || image) {
+      $("photo").src=isDemo?"/demo.jpg":image;
+      $("frame").hidden=false;
+    }
+    const response=await fetch("/api/scan",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({demo:isDemo,image,ageMonths:months(profile.birth),allergies:profile.allergies||""})});
+    const data=await response.json();
+    if (!response.ok) throw new Error(data.error);
+    render(data);
+  } catch(error) { $("status").textContent = error.message || "分析失败，请重试。"; }
+  finally { setBusy(false); }
+}
+async function jpeg(file) {
+  const url=URL.createObjectURL(file);
+  try {
+    const image=new Image(); image.src=url; await image.decode();
+    const scale=Math.min(1,1600/Math.max(image.naturalWidth,image.naturalHeight));
+    const canvas=document.createElement("canvas");
+    canvas.width=Math.round(image.naturalWidth*scale);canvas.height=Math.round(image.naturalHeight*scale);
+    canvas.getContext("2d").drawImage(image,0,0,canvas.width,canvas.height);
+    return canvas.toDataURL("image/jpeg",0.86);
+  } finally { URL.revokeObjectURL(url); }
+}
+$("camera-button").onclick=()=>{
+  const age=months(profile.birth);
+  if (age===null || age<12 || age>23) {
+    $("status").textContent="请先设置出生日期。当前试点覆盖 12–23 个月。";openProfile(true);return;
+  }
+  $("camera").click();
+};
+$("camera").onchange=async event=>{
+  const file=event.target.files[0];event.target.value="";
+  if (!file || busy) return;
+  setBusy(true);
+  let image;
+  try { image=await jpeg(file); }
+  catch { $("status").textContent="照片打不开，请重拍或选 JPEG 照片。"; }
+  finally { setBusy(false); }
+  if (image) await analyze(false,image);
+};
+$("demo-button").onclick=()=>analyze(true);
+</script></body></html>

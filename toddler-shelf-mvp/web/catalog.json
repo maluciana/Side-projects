@@ -1,0 +1,98 @@
+{
+  "market": "US",
+  "checked_on": "2026-11-23",
+  "retailer_discovery": "https://www.walmart.com/c/best-sellers/whole-milk-plain-yogurt",
+  "products": [
+    {
+      "id": "stonyfield-whole-plain-32",
+      "brand": "Stonyfield",
+      "style": "regular",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170,
+      "added_sugar_g": 0,
+      "sodium_mg": 85,
+      "ingredients": [
+        "cultured pasteurized organic whole milk",
+        "pectin",
+        "vitamin D3"
+      ],
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "source": "https://www.stonyfield.com/products/whole-milk-smooth-creamy-plain-32oz/"
+    },
+    {
+      "id": "stonyfield-whole-vanilla-32",
+      "brand": "Stonyfield",
+      "style": "regular",
+      "flavor": "vanilla",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170,
+      "added_sugar_g": 11,
+      "sodium_mg": 85,
+      "ingredients": [
+        "cultured pasteurized organic whole milk",
+        "organic cane sugar",
+        "organic natural vanilla flavor",
+        "pectin",
+        "lactase enzyme",
+        "vitamin D3"
+      ],
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "source": "https://www.stonyfield.com/products/whole-milk-probiotic-yogurt-vanilla-32-oz/"
+    },
+    {
+      "id": "chobani-whole-plain-greek-32",
+      "brand": "Chobani",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170,
+      "added_sugar_g": 0,
+      "sodium_mg": 60,
+      "ingredients": [
+        "cultured milk"
+      ],
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "source": "https://chobani.com/products/yogurt-greek-whole-milk-plain-large-size-tub"
+    },
+    {
+      "id": "good-and-gather-nonfat-plain-greek-32",
+      "brand": "Good & Gather",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": null,
+      "serving_text": "3/4 cup",
+      "added_sugar_g": 0,
+      "sodium_mg": 55,
+      "ingredients": [
+        "cultured pasteurized grade A nonfat milk",
+        "live and active cultures"
+      ],
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "source": "https://www.target.com/p/-/A-94895373"
+    }
+  ],
+  "retailer_queue": [
+    "bettergoods Plain Whole Milk Greek Yogurt, 32 oz",
+    "Cabot Whole Milk Plain Greek Yogurt, 32 oz",
+    "FAGE Total Whole Milk Plain Greek Yogurt, 32 oz",
+    "Trader Joe’s Greek Whole Milk Yogurt Plain, 16 oz"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "age_months": 19,
+  "allergens": [],
+  "candidates": [
+    {"brand":"Stonyfield","style":"regular","flavor":"plain","milk_fat":"whole","size_oz":32,"box":[0.08,0.64,0.19,0.85]},
+    {"brand":"Stonyfield","style":"regular","flavor":"vanilla","milk_fat":"whole","size_oz":32,"box":[0.30,0.64,0.40,0.85]},
+    {"brand":"365","style":"regular","flavor":"plain","milk_fat":"whole","size_oz":32,"box":[0.00,0.64,0.08,0.85]}
+  ]
+}

@@ -22,7 +22,24 @@
         "milk"
       ],
       "may_contain": null,
-      "source": "https://www.stonyfield.com/products/whole-milk-smooth-creamy-plain-32oz/"
+      "source": "https://www.stonyfield.com/products/whole-milk-smooth-creamy-plain-32oz/",
+      "upc": "052159000011",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "10805152",
+          "url": "https://www.walmart.com/ip/10805152",
+          "checked_on": "2026-11-23"
+        },
+        {
+          "retailer": "Target",
+          "retailer_id": "14938766",
+          "url": "https://www.target.com/p/-/A-14938766",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "source_notes": "Walmart and brand agree on sodium; Target and brand agree on added sugar. Total sugars differs across sources and is omitted."
     },
     {
       "id": "stonyfield-whole-vanilla-32",
@@ -65,7 +82,17 @@
         "milk"
       ],
       "may_contain": null,
-      "source": "https://chobani.com/products/yogurt-greek-whole-milk-plain-large-size-tub"
+      "source": "https://chobani.com/products/yogurt-greek-whole-milk-plain-large-size-tub",
+      "upc": "894700010434",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "25205752",
+          "url": "https://www.walmart.com/ip/25205752",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
     },
     {
       "id": "good-and-gather-nonfat-plain-greek-32",
@@ -86,13 +113,656 @@
         "milk"
       ],
       "may_contain": null,
-      "source": "https://www.target.com/p/-/A-94895373"
+      "source": "https://www.target.com/p/-/A-94895373",
+      "upc": "085239078419",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "94895373",
+          "url": "https://www.target.com/p/-/A-94895373",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "bettergoods-plain-greek-whole-32",
+      "category": "yogurt",
+      "brand": "bettergoods",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": 0,
+      "sodium_mg": 55.0,
+      "ingredients": null,
+      "ingredients_text": "CULTURED PASTEURIZED GRADE A MILK",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "194346193974",
+      "source": "https://www.walmart.com/ip/5298196208",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "5298196208",
+          "url": "https://www.walmart.com/ip/5298196208",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "source_notes": "The 0 g added sugar appears in one Walmart label snapshot for UPC 194346193974 and is omitted in another retailer response."
+    },
+    {
+      "id": "great-value-plain-nonfat-32",
+      "category": "yogurt",
+      "brand": "Great Value",
+      "style": "regular",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "2/3 cup (170g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 110.0,
+      "ingredients": null,
+      "ingredients_text": "CULTURED PASTEURIZED GRADE A NONFAT MILK, PECTIN, VITAMIN D3",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "078742229218",
+      "source": "https://www.walmart.com/ip/10450107",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "10450107",
+          "url": "https://www.walmart.com/ip/10450107",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "cabot-plain-greek-whole-32",
+      "category": "yogurt",
+      "brand": "Cabot",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 80.0,
+      "ingredients": null,
+      "ingredients_text": "PASTEURIZED MILK, CREAM, MILK PROTEIN CONCENTRATE, WHEY PROTEIN CONCENTRATE, LIVE ACTIVE YOGURT CULTURES (ACIDOPHILUS, BIFIDUS, L, BULGARICUS AND S, THERMOPHILUS), VITAMIN A PALMITATE, VITAMIN D3",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "078354303559",
+      "source": "https://www.walmart.com/ip/32358846",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "32358846",
+          "url": "https://www.walmart.com/ip/32358846",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "fage-plain-greek-whole-32",
+      "category": "yogurt",
+      "brand": "FAGE",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 60.0,
+      "ingredients": null,
+      "ingredients_text": "GRADE A PASTEURIZED SKIMMED MILK AND CREAM, LIVE ACTIVE YOGURT CULTURES (L, BULGARICUS, S, THERMOPHILUS, L, ACIDOPHILUS, BIFIDUS, L, CASEI)",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "689544083009",
+      "source": "https://www.walmart.com/ip/104030552",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "104030552",
+          "url": "https://www.walmart.com/ip/104030552",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "dannon-plain-whole-32",
+      "category": "yogurt",
+      "brand": "Dannon",
+      "style": "regular",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 80.0,
+      "ingredients": null,
+      "ingredients_text": "CULTURED GRADE A MILK, LIVE & ACTIVE YOGURT CULTURES S, THERMOPHILUS, L, BULGARICUS & L, ACIDOPHILUS, VITAMIN D3",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "036632002822",
+      "source": "https://www.walmart.com/ip/10291171",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "10291171",
+          "url": "https://www.walmart.com/ip/10291171",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "fage-plain-greek-whole-5-3",
+      "category": "yogurt",
+      "brand": "FAGE",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 5.3,
+      "serving_g": 150.0,
+      "serving_text": "1 Container (150g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 55.0,
+      "ingredients": null,
+      "ingredients_text": "GRADE A PASTEURIZED SKIMMED MILK AND CREAM, LIVE ACTIVE YOGURT CULTURES (L, BULGARICUS, S, THERMOPHILUS, L, ACIDOPHILUS, BIFIDUS, L, CASEI)",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "689544080602",
+      "source": "https://www.walmart.com/ip/182429846",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "182429846",
+          "url": "https://www.walmart.com/ip/182429846",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "greek-gods-traditional-plain-whole-32",
+      "category": "yogurt",
+      "brand": "The Greek Gods",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "2/3 cup (170g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 110.0,
+      "ingredients": null,
+      "ingredients_text": "CULTURED PASTEURIZED GRADE A MILK, PECTIN",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "078355550013",
+      "source": "https://www.walmart.com/ip/50280101",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "50280101",
+          "url": "https://www.walmart.com/ip/50280101",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "great-value-plain-greek-nonfat-32",
+      "category": "yogurt",
+      "brand": "Great Value",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "2/3 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 50.0,
+      "ingredients": null,
+      "ingredients_text": "CULTURED PASTEURIZED GRADE A NONFAT MILK",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "078742016856",
+      "source": "https://www.walmart.com/ip/26559565",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "26559565",
+          "url": "https://www.walmart.com/ip/26559565",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "fage-plain-greek-lowfat-32",
+      "category": "yogurt",
+      "brand": "FAGE",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "lowfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 55.0,
+      "ingredients": null,
+      "ingredients_text": "GRADE A PASTEURIZED SKIMMED MILK AND CREAM, LIVE ACTIVE YOGURT CULTURES (L, BULGARICUS, S, THERMOPHILUS, L, ACIDOPHILUS, BIFIDUS, L, CASEI)",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "689544083023",
+      "source": "https://www.walmart.com/ip/23591400",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "23591400",
+          "url": "https://www.walmart.com/ip/23591400",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "great-value-plain-greek-nonfat-5-3",
+      "category": "yogurt",
+      "brand": "Great Value",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 5.3,
+      "serving_g": null,
+      "serving_text": null,
+      "added_sugar_g": null,
+      "sodium_mg": null,
+      "ingredients": null,
+      "ingredients_text": "CULTURED PASTEURIZED GRADE A NONFAT MILK",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "078742147413",
+      "source": "https://www.walmart.com/ip/166046751",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "166046751",
+          "url": "https://www.walmart.com/ip/166046751",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "chobani-plain-greek-nonfat-32",
+      "category": "yogurt",
+      "brand": "Chobani",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 65.0,
+      "ingredients": null,
+      "ingredients_text": "Cultured nonfat milk",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "894700010137",
+      "source": "https://www.walmart.com/ip/21291511",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "21291511",
+          "url": "https://www.walmart.com/ip/21291511",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "fage-plain-greek-nonfat-32",
+      "category": "yogurt",
+      "brand": "FAGE",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": null,
+      "sodium_mg": 65.0,
+      "ingredients": null,
+      "ingredients_text": "GRADE A PASTEURIZED SKIMMED MILK, LIVE ACTIVE YOGURT CULTURES (L, BULGARICUS, S, THERMOPHILUS, L, ACIDOPHILUS, BIFIDUS, L, CASEI)",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "689544083016",
+      "source": "https://www.walmart.com/ip/19857845",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "19857845",
+          "url": "https://www.walmart.com/ip/19857845",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "fage-plain-greek-nonfat-5-3",
+      "category": "yogurt",
+      "brand": "FAGE",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 5.3,
+      "serving_g": 150.0,
+      "serving_text": "1 Container (150g)",
+      "added_sugar_g": null,
+      "sodium_mg": 55.0,
+      "ingredients": null,
+      "ingredients_text": "GRADE A PASTEURIZED SKIMMED MILK, LIVE ACTIVE YOGURT CULTURES (L, BULGARICUS, S, THERMOPHILUS, L, ACIDOPHILUS, BIFIDUS, L, CASEI). *Contains naturally occurring milk sugar - Not a low calorie food",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "689544080008",
+      "source": "https://www.walmart.com/ip/19857829",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "19857829",
+          "url": "https://www.walmart.com/ip/19857829",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "stonyfield-plain-greek-nonfat-32",
+      "category": "yogurt",
+      "brand": "Stonyfield",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 32,
+      "serving_g": 170.0,
+      "serving_text": "3/4 cup (170g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 50.0,
+      "ingredients": null,
+      "ingredients_text": "Cultured Pasteurized Organic Nonfat Milk",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "052159532505",
+      "source": "https://www.walmart.com/ip/39670537",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "39670537",
+          "url": "https://www.walmart.com/ip/39670537",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "good-and-gather-whole-plain-greek-32",
+      "category": "yogurt",
+      "brand": "Good & Gather",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "whole",
+      "size_oz": 32,
+      "serving_g": 170,
+      "added_sugar_g": 0,
+      "sodium_mg": null,
+      "ingredients_text": null,
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "085239078433",
+      "source": "https://www.target.com/p/-/A-78362089",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "78362089",
+          "url": "https://www.target.com/p/-/A-78362089",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "source_notes": "Two label panels agree on added sugar and declared milk; sodium and ingredient formulations differ.",
+      "label_variants": [
+        {
+          "sodium_mg": 55,
+          "ingredients_summary": "cultured nonfat milk and cream"
+        },
+        {
+          "sodium_mg": 50,
+          "ingredients_summary": "cultured milk, cream, vitamin D3, and cultures"
+        }
+      ]
+    },
+    {
+      "id": "chobani-plain-greek-nonfat-5-3",
+      "category": "yogurt",
+      "brand": "Chobani",
+      "style": "greek",
+      "flavor": "plain",
+      "milk_fat": "nonfat",
+      "size_oz": 5.3,
+      "serving_g": 150,
+      "added_sugar_g": 0,
+      "sodium_mg": 55,
+      "ingredients_text": "Cultured nonfat milk",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "894700010014",
+      "source": "https://www.target.com/p/-/A-23974732",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "23974732",
+          "url": "https://www.target.com/p/-/A-23974732",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "chobani-strawberry-greek-nonfat-5-3",
+      "category": "yogurt",
+      "brand": "Chobani",
+      "style": "greek",
+      "flavor": "strawberry",
+      "milk_fat": "nonfat",
+      "size_oz": 5.3,
+      "serving_g": 150,
+      "added_sugar_g": 9,
+      "sodium_mg": 55,
+      "ingredients_text": "Cultured nonfat milk, strawberries, cane sugar, water, fruit pectin, natural flavors, guar gum, locust bean gum, fruit and vegetable juice concentrate (color), lemon juice concentrate",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "894700010045",
+      "source": "https://www.target.com/p/-/A-13173302",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "13173302",
+          "url": "https://www.target.com/p/-/A-13173302",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "oikos-triple-zero-vanilla-greek-nonfat-4x5-3",
+      "category": "yogurt",
+      "brand": "Oikos",
+      "style": "greek",
+      "flavor": "vanilla",
+      "milk_fat": "nonfat",
+      "size_oz": 21.2,
+      "serving_g": 150,
+      "added_sugar_g": 0,
+      "sodium_mg": 55,
+      "ingredients_text": "Cultured nonfat milk, water, natural flavors, tapioca starch, stevia leaf extract, lemon juice concentrate, sea salt, vitamin D3, and cultures",
+      "known_allergens": [
+        "milk"
+      ],
+      "may_contain": null,
+      "upc": "036632019530",
+      "source": "https://www.target.com/p/-/A-24013290",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "24013290",
+          "url": "https://www.target.com/p/-/A-24013290",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "pack_count": 4,
+      "unit_oz": 5.3,
+      "sweeteners": [
+        "stevia"
+      ]
     }
   ],
   "retailer_queue": [
-    "bettergoods Plain Whole Milk Greek Yogurt, 32 oz",
-    "Cabot Whole Milk Plain Greek Yogurt, 32 oz",
-    "FAGE Total Whole Milk Plain Greek Yogurt, 32 oz",
-    "Trader Joe’s Greek Whole Milk Yogurt Plain, 16 oz"
+    "Trader Joe’s Greek Whole Milk Yogurt Plain, 16 oz",
+    "Great Value 100% Whole Wheat Bread 20 oz (Walmart SKU verification pending)"
+  ],
+  "reference_products": [
+    {
+      "id": "market-pantry-honey-wheat-bread-20",
+      "category": "bread",
+      "brand": "Market Pantry",
+      "style": "sliced",
+      "flavor": "honey wheat",
+      "milk_fat": null,
+      "size_oz": 20,
+      "serving_g": 26,
+      "added_sugar_g": 2,
+      "sodium_mg": 110,
+      "ingredients_text": null,
+      "known_allergens": [
+        "wheat"
+      ],
+      "may_contain": null,
+      "upc": null,
+      "source": "https://www.target.com/p/-/A-53448447",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "53448447",
+          "url": "https://www.target.com/p/-/A-53448447",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "source_notes": "Nutrition verified. Complete ingredients and allergen declaration are pending."
+    },
+    {
+      "id": "good-and-gather-unsweetened-applesauce-46",
+      "category": "snack",
+      "brand": "Good & Gather",
+      "style": "jar",
+      "flavor": "unsweetened apple",
+      "milk_fat": null,
+      "size_oz": 46,
+      "serving_g": null,
+      "added_sugar_g": 0,
+      "sodium_mg": 10,
+      "ingredients_text": "Apples, water, ascorbic acid",
+      "known_allergens": [],
+      "may_contain": null,
+      "upc": "085239045183",
+      "source": "https://www.target.com/p/-/A-54532245",
+      "listings": [
+        {
+          "retailer": "Target",
+          "retailer_id": "54532245",
+          "url": "https://www.target.com/p/-/A-54532245",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23",
+      "serving_text": "1/2 cup"
+    },
+    {
+      "id": "great-value-unsweetened-applesauce-50x3-2",
+      "category": "snack",
+      "brand": "Great Value",
+      "style": "pouch",
+      "flavor": "unsweetened apple",
+      "milk_fat": null,
+      "size_oz": 160,
+      "serving_g": 90.0,
+      "serving_text": "1 pouch (90g)",
+      "added_sugar_g": 0.0,
+      "sodium_mg": 0.0,
+      "ingredients": null,
+      "ingredients_text": "APPLES, ASCORBIC ACID (TO MAINTAIN COLOR)",
+      "known_allergens": [],
+      "may_contain": null,
+      "upc": "194346254910",
+      "source": "https://www.walmart.com/ip/6316172712",
+      "listings": [
+        {
+          "retailer": "Walmart",
+          "retailer_id": "6316172712",
+          "url": "https://www.walmart.com/ip/6316172712",
+          "checked_on": "2026-11-23"
+        }
+      ],
+      "checked_on": "2026-11-23"
+    }
   ]
 }

@@ -6,4 +6,6 @@ Run `node build.mjs` to create the hosted Worker. Configure the server-side secr
 
 Keep catalog changes in Git. Update the sources and check date when reviewing labels. Add confirmed new records and preserve unknown fields as null. Field-level evidence, multiple label versions, dedicated barcode confirmation, bread/snack data, and expanded retail coverage are follow-up work. This pilot uses a versioned JSON snapshot.
 
-To reproduce the demo asset, save the shelf photo from the credited source as `demo.jpg` in this directory before running the build.
+The catalog distinguishes yogurt records used for matching from reference-only bread and snack entries. Walmart and Target listing IDs and UPCs are stored when verified. Missing fields remain null, and conflicting label panels are kept as variants. Online listings do not establish shelf availability.
+
+To reproduce the demo asset, save the shelf photo from the credited source as `demo.jpg` before running the build.

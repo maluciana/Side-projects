@@ -24,8 +24,9 @@ export function evaluate(candidates, allergyText = "") {
     if(allergies.some(a=>row.known_allergens.includes(a)||(row.may_contain??[]).includes(a)))
       return {...result,status:"skip",reason:"已收录的标签含档案中列出的过敏原或提示可能含有。"};
     if(allergies.length) return {...result,status:"verify",reason:"请核对手上这盒的完整配料和过敏声明。线上标签无法确认实物。"};
+    if(row.sweeteners?.length) return {...result,status:"skip",reason:"配料表标有甜味剂（"+row.sweeteners.join("、")+"）。"};
     if(row.added_sugar_g==null) return {...result,status:"verify",reason:"缺少已核对的添加糖数据。"};
-    if(row.added_sugar_g>0) return {...result,status:"skip",reason:"官网标签显示每份有 "+row.added_sugar_g+" g 添加糖。"};
+    if(row.added_sugar_g>0) return {...result,status:"skip",reason:"已收录标签显示每份有 "+row.added_sugar_g+" g 添加糖。"};
     if(row.flavor==="plain"&&row.milk_fat==="whole")
       return {...result,status:"pick",reason:"原味全脂，已收录标签显示 0 g 添加糖。"};
     return {...result,status:"neutral",reason:"已收录标签显示 0 g 添加糖，这个月龄日常可优先找原味全脂。"};
